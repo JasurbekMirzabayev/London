@@ -1,0 +1,127 @@
+/* @import"./global.css"; */
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
+.news__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    margin-bottom: 40px;
+}
+
+.news_content{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.news__content__title{
+    margin-bottom:6px ;
+    font-size: 64px;
+    letter-spacing: 0.03em;
+}
+
+
+.news__card{
+    width: 33.33333%;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.news__card__inner{
+    background: #ffffff;
+    border: 1px solid rgba(36, 36, 36, 0.1);
+    border-radius: 14px;
+}
+
+.news__card__img{
+    width: 100%;
+}
+
+.news__card__content{
+    padding: 20px;
+}
+
+.news__card__title{
+    color: #242424;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.news__card__text{
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.news__card__footer {
+    padding-left:20px ;
+    padding-right:20px ;
+    padding-top:0px ;
+    /* padding: 0 20px 30px; */
+}
+
+.news__card__footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.news__footer__link {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #BB2339;
+}
+
+.news__footer__date{
+    font-size: 14px;
+    color: #242424;
+    opacity: 0.5;
+}
+
+.news__view {
+    text-align: center;
+    padding: 35px 0 120px;
+}
+
+.news__view__btn{
+    border: 1px solid #bb2339;
+    border-radius: 100px;
+    padding: 8px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    background-color: #ffffff;
+    color: #242424;
+}
+
+.news__view__btn:hover{
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: #bb2339;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    .news__card {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .news__card {
+        width: 100%;
+    }
+}
